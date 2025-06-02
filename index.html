@@ -13,14 +13,15 @@
     <meta property="og:title" content="2025 김규리 Portfolio">
     <meta property="og:description" content="UI &middot; UX Web Portfolio">
     <meta property="og:url" content="https://solcasa.github.io/pf__2025">
-    <meta property="og:image" content="./images/og_cover.png">
+    <meta property="og:image" content="./images/cover_25.png">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_25.png">
     <link rel="canonical" href="https://solcasa.github.io/pf__2025">
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
 
+    <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/custom.js"></script>
 </head>
 
@@ -28,9 +29,325 @@
     <!-- header -->
     <header class="header">
         <div class="header_wrap inner">
-            <h1>logo</h1>
+            <div class="pf_img">
+                <img src="./images/profile.jpg" alt="김규리 포트폴리오">
+            </div>
+            <div class="pf_txt">
+                <h2>김규리 포트폴리오</h2>
+                <p>2025 UI &middot; UX Web Portfolio</p>
+            </div>
         </div>
     </header>
+
+    <!-- main -->
+    <main class="main">
+        <div class="main_content inner">
+            <div class="tabs-container">
+                <!-- tab_btn -->
+                <nav class="tabs">
+                    <ul>
+                        <li class="active" data-tab="tab-1">Project</li>
+                        <li data-tab="tab-2">Insights</li>
+                        <li data-tab="tab-3">Profile</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Project -->
+            <div id="tab-1" class="tab-content current">
+                <div class="project_wrap">
+                    <div class="grid-box">
+                        <h2>덕진내과의원</h2>
+                        <p>위내시경 전문 의원 웹사이트 디자인 기획</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1주 소요</li>
+                            <li>- 역할 : 시안</li>
+                            <a href="https://imdeokjin.com" target="_blank">- 링크 : https://imdeokjin.com</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>슬림미의원</h2>
+                        <p>울산 지역 피부과의원 홍보용 웹사이트 구축</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 퍼블리싱</li>
+                            <a href="https://slimmiskin.co.kr" target="_blank">- 링크 : https://slimmiskin.co.kr</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>(주)남영</h2>
+                        <p>토탈 인테리어 전문기업의 포트폴리오 중심 웹사이트 구축</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 커스터마이징 / 작업물 업로드</li>
+                            <a href="https://nyin.co.kr" target="_blank">- 링크 : https://nyin.co.kr</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>강소기업진흥협회</h2>
+                        <p>연구소 사후관리를 지원하는 협회의 랜딩페이지 구축</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 2주 소요</li>
+                            <li>- 역할 : 시안 / 퍼블리싱</li>
+                            <a href="http://kangsornd.dothome.co.kr" target="_blank">- 링크 :
+                                http://kangsornd.dothome.co.kr</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>동물세포실증지원센터</h2>
+                        <p>동물세포기반 백신&middot;바이오 생산 지원 기관 웹사이트 구축</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 2개월 소요</li>
+                            <li>- 역할 : 시안 / 퍼블리싱</li>
+                            <a href="https://kbiocmo.or.kr" target="_blank">- 링크 :
+                                https://kbiocmo.or.kr</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>부산학교식자재사업협동조합</h2>
+                        <p>발주시스템 로그인 후 입력화면 및 발주 양식 등 퍼블리싱</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 시안 / 퍼블리싱</li>
+                            <a href="https://www.bsfsbc.com" target="_blank">- 링크 :
+                                https://www.bsfsbc.com</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>강소기업개발진흥원</h2>
+                        <p>ISO 전문가 양성기관 랜딩페이지 구축</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 2주 소요</li>
+                            <li>- 역할 : 시안 / 퍼블리싱</li>
+                            <a href="http://kangsobest.dothome.co.kr" target="_blank">- 링크 :
+                                http://kangsobest.dothome.co.kr</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>엔터샵</h2>
+                        <p>남성패션쇼핑몰 PC화면을 모바일 형태로 통일시키는 작업</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 2일 소요</li>
+                            <li>- 역할 : 카페24 템플릿 커스터마이징</li>
+                            <a href="https://entershop.kr" target="_blank">- 링크 :
+                                https://entershop.kr</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>스타프리미어</h2>
+                        <p>김해 가구 단지 카페24기반 홈페이지형 웹사이트 제작</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 카페24 템플릿 커스터마이징</li>
+                            <a href="https://starprm.com" target="_blank">- 링크 :
+                                https://starprm.com</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>주주씨앗</h2>
+                        <p>씨앗 전문 쇼핑몰 ‘주주씨앗’의 온라인 쇼핑몰 구축</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 카페24 템플릿 커스터마이징</li>
+                            <a href="https://jujuseed.cafe24.com" target="_blank">- 링크 :
+                                https://jujuseed.cafe24.com</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>워터리아</h2>
+                        <p>AI 기반 크레인 안전관리 플랫폼 개발 기업 웹사이트 제작</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 퍼블리싱</li>
+                            <a href="https://water-ria.rf.gd/?i=1" target="_blank">- 링크 :
+                                https://water-ria.rf.gd/?i=1</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>상명무역엔지니어링</h2>
+                        <p>조선&middot;해양기자재 전문 에이전트 웹사이트 제작</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 시안 / 퍼블리싱</li>
+                            <a href="https://www.sangmyung.net" target="_blank">- 링크 :
+                                https://www.sangmyung.net</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>올루션</h2>
+                        <p>구&#41;굿딜파트너 ‘올루션’의 랜딩페이지 제작</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1주 소요</li>
+                            <li>- 역할 : 커스터마이징</li>
+                            <a href="https://www.굿딜파트너.com" target="_blank">- 링크 :
+                                https://www.굿딜파트너.com</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>벨로타 벨로타</h2>
+                        <p>프랑스 샤퀴테리 영카트 기반 홈페이지형 웹사이트 제작</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 2-3개월 소요</li>
+                            <li>- 역할 : 시안 / 퍼블리싱 / 영카트 커스터마이징</li>
+                            <a href="https://www.bellota-bellota.co.kr" target="_blank">- 링크 :
+                                https://www.bellota-bellota.co.kr</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>굿딜파트너</h2>
+                        <p>온라인 마케팅 업체 랜딩페이지 제작</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 3일 소요</li>
+                            <li>- 역할 : 시안 / 퍼블리싱</li>
+                            <a href="#" target="_blank">- 링크 : 사이트 종료</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>엠워시 Admin</h2>
+                        <p>병원·요양원 세탁 전문 플랫폼 관리자 페이지 퍼블리싱</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1일 소요</li>
+                            <li>- 역할 : 거래명세표, 세탁집계표 퍼블리싱</li>
+                            <a href="https://enmhd.mycafe24.com/forum/login.php?url=%2Findex.php" target="_blank">- 링크 :
+                                내부 시스템은 비공개</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>ISP 코리아</h2>
+                        <p>조선기자재 및 선박엔진 제어장비 전문 기업 웹사이트 제작</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 퍼블리싱</li>
+                            <a href="http://isp-korea.com" target="_blank">- 링크 :
+                                http://isp-korea.com</a>
+                        </ul>
+                    </div>
+                    <div class="grid-box">
+                        <h2>현대선박기술</h2>
+                        <p>선박 설계&middot;개발 전문 기업 웹사이트 제작</p>
+                        <ul class="pj_desc">
+                            <li>- 기간 : 1개월 소요</li>
+                            <li>- 역할 : 퍼블리싱</li>
+                            <a href="http://www.hdship-eng.com" target="_blank">- 링크 :
+                                http://www.hdship-eng.com</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insights  -->
+            <div id="tab-2" class="tab-content">
+                <div class="pj_list">
+                    <a href="https://www.bellota-bellota.co.kr" target="_blank">
+                        <div class="pj_img">
+                            <img src="./images/bellota_cover.png" alt="bellota-bellota">
+                        </div>
+                        <h2>벨로타 벨로타</h2>
+                        <p>2024.06 - 2024.08 (3개월)</p>
+                    </a>
+                    <div class="pj_qa">
+                        <ul class="pj_interview">
+                            <strong>Q. 이 프로젝트에서 맡은 역할은 무엇이었나요?</strong>
+                            <li>- 브랜드 톤앤매너를 반영한 디자인 기획 및 시안 제작</li>
+                            <li>- 그누보드 기반 쇼핑몰의 UI 구조 설계 및 사용자 흐름 최적화</li>
+                            <li>- 반응형 웹 퍼블리싱 및 UI/UX 디테일 구현</li>
+                        </ul>
+                        <ul class="pj_interview">
+                            <strong>Q. 작업하면서 어떤 점이 가장 도전적이었나요?</strong>
+                            <li>기존에는 에이전시 특성상 정해진 틀을 활용해 작업하는 경우가 많았지만, 이번 프로젝트는 처음으로 제가 직접 기획하고 구조를 설계한 점이 가장 도전적이었습니다.
+                                페이지 수가 많은 장기 프로젝트였기 때문에 CSS를 모듈화하고 중복을 줄여 퍼포먼스를 개선하는 데에도 신경을 많이 썼습니다.</li>
+                            <li class="pd-top10">또한, 그누보드 테마를 커스텀한 것은 처음이었는데, 이 기회를 통해 다양한 PHP 구조를 접할 수 있었고 게시판을 생성하거나
+                                이동하는 방법도 새롭게
+                                배울 수 있었습니다.</li>
+                        </ul>
+                        <ul class="pj_interview">
+                            <strong>Q. 결과는 어땠나요?</strong>
+                            <li>클라이언트 측에서 고급 식품 브랜드의 이미지를 잘 살린 디자인이라고 긍정적인 평가를 받았고, 그 결과 백화점 리플렛 디자인 작업까지 추가로 수주하게
+                                되었습니다.</li>
+                            <li class="pd-top10">단순 퍼블리싱을 넘어 브랜드 아이덴티티를 구축하는 브랜딩 작업의 중요성을 깨닫게 된, 개인적으로도 의미 있는 프로젝트였습니다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pj_list pd-top40" style="border-bottom: none;">
+                    <a href="https://starprm.com" target="_blank">
+                        <div class="pj_img">
+                            <img src="./images/starprm_cover.png" alt="bellota-bellota" style="border: 1px solid #eee;">
+                        </div>
+                        <h2>스타프리미어</h2>
+                        <p>2024.10 - 2024.11 (1개월)</p>
+                    </a>
+                    <div class="pj_qa">
+                        <ul class="pj_interview">
+                            <strong>Q. 이 프로젝트에서 맡은 역할은 무엇이었나요?</strong>
+                            <li>- 카페24 템플릿 커스터마이징</li>
+                            <li>- 회사소개 및 브랜드 관련 서브페이지는 직접 하드코딩하여 구현</li>
+                            <li>- 추후 쇼핑몰 기능 활성화를 고려한 구조로 유연하게 구성</li>
+                        </ul>
+                        <ul class="pj_interview">
+                            <strong>Q. 작업하면서 어떤 점이 가장 도전적이었나요?</strong>
+                            <li>클라이언트가 이미 구매한 카페24 쇼핑몰 템플릿을 기반으로 작업해야 했기 때문에, 쇼핑 기능을 비활성화하고 일반 홈페이지 형태로 커스터마이징하는 과정이 가장
+                                도전적이었습니다.</li>
+                            <li class="pd-top10">쇼핑몰 구조를 유지하면서도 사용자에게는 기업 홈페이지처럼 보이도록 구성해야 했기 때문에, 레이아웃과 기능의 조화를 맞추는데
+                                신경을 많이 써야 했습니다. 제한된 템플릿 구조 안에서 원하는 디자인과 기능을 구현하기 위해 많은 테스트와 세심한 코드 수정이 필요했습니다.</li>
+                        </ul>
+                        <ul class="pj_interview" style="margin: 0 0 0 0;">
+                            <strong>Q. 결과는 어땠나요?</strong>
+                            <li>카페24의 기본 구조나 모듈에 대해 깊이 있게 다뤄본 적이 없었는데, 이번 프로젝트를 통해 전체적인 코드 구조와 모듈 시스템에 대해 많이 공부하고 이해하게
+                                되었습니다. 다양한 기능을 수정하고 직접 구현하면서 실무적인 역량도 함께 향상되었습니다.</li>
+                            <li class="pd-top10">또한 클라이언트의 다양한 요구사항을 듣고 반영하는 과정을 통해, 소통과 유연한 대응의 중요성을 다시 한 번 느꼈습니다.
+                                결과적으로 원하는 방향에 맞춰 잘 마무리할 수 있었고, 실무 경험 측면에서도 큰 의미가 있는 프로젝트였습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Profile -->
+            <div id="tab-3" class="tab-content">
+                <div class="profile_wrap">
+                    <div class="pf_imgbox">
+                        <img src="./images/profile.jpg" alt="profile_img">
+                    </div>
+                    <ul class="pj_interview" style="margin: 0 0 0 0;">
+                        <strong class="font-eng">Info</strong>
+                        <li>김 규 리</li>
+                        <li>1989.03.12</li>
+                        <li>010-8509-9860</li>
+                        <li>solcasa8789@gmail.com</li>
+                        <li>https://github.com/solcasa</li>
+                        <strong class="font-eng pd-top20">Tool</strong>
+                        <li>- HTML / CSS / Javascript / Jquery</li>
+                        <li>- Figma / Photoshop / Illustrator</li>
+                        <li class="pd-top20">
+                            <img src="./images/kakao_qr.PNG" alt="kakao_qr">
+                        </li>
+                    </ul>
+                    <ul class="pj_interview" style="margin: 0 0 0 0;">
+                        <strong class="font-eng">Education</strong>
+                        <li>부산외국어대학교 스페인어/영어전공 졸업</li>
+                        <li>그린컴퓨터아카데미 UI&middot;UX 반응형 웹디자인 &amp; 웹퍼블리셔 과정수료</li>
+
+                        <strong class="font-eng pd-top20">Experience</strong>
+                        <li>이엔엠커뮤니케이션 (2024.03 ~ 2025.03, 1년)</li>
+                        <li>- 웹사이트 제작 및 유지보수</li>
+                        <li>- 카페24, 그누보드 템플릿 커스텀</li>
+                        <li>- 그외 sns 컨텐츠, 병원 팝업관리</li>
+                        <li class="pd-top10">링크오브투데이 (2023.09 ~ 2023.11, 3개월)</li>
+                        <li>- 콘텐츠 리워드 플랫폼 '보물찾기' 앱/웹 기획 및 UI&middot;UX 디자인</li>
+                        <li>- 광고 디자인 초안 및 제안서 제작</li>
+                        <li>- 그외 영업지원 데이터 수집 및 사업설명회 진행</li>
+                        <li class="pd-top10">홈쇼핑, 소셜커머스 등 다양한 온라인 판매처 관리 경험 보유</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="ft_wrap inner">
+            <p class="copy">&copy; 2025 Gyuri Kim. 본 포트폴리오는 비상업적 목적의 포트폴리오용으로 제작되었습니다.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
